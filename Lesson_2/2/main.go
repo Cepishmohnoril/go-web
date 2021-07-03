@@ -7,7 +7,7 @@ import (
 )
 
 type hotel struct {
-	name, address, city, zip, region string
+	Name, Address, City, Zip, Region string
 }
 
 var tpl *template.Template
@@ -19,11 +19,18 @@ func init() {
 func main() {
 	hotelsList := []hotel{
 		{
-			name:    "Doot",
-			address: "Some Address",
-			city:    "New Foo",
-			zip:     "Bar",
-			region:  "Memeland",
+			Name:    "Doot",
+			Address: "Some Address",
+			City:    "New Foo",
+			Zip:     "Bar",
+			Region:  "Memeland",
+		},
+		{
+			Name:    "Doot2",
+			Address: "Some Address2",
+			City:    "New Bao",
+			Zip:     "For",
+			Region:  "Memeland",
 		},
 	}
 
